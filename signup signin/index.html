@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <style>
+      #container1 {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container1">
+      <h2>Sign Up</h2>
+      <form action="" method="POST">
+        <table>
+          <tr>
+            <td><label for="email">Email: </label></td>
+            <td>
+              <input type="email" placeholder="Enter your email" id="email" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="username">Username: </label></td>
+            <td>
+              <input type="text" placeholder="Choose your username" id="username" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password: </label></td>
+            <td>
+              <input type="password" placeholder="Enter your password" id="password" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="confirm">Confirm Password: </label></td>
+            <td>
+              <input type="password" placeholder="Confirm your password" id="confirm" required />
+            </td>
+          </tr>
+        </table>
+        <br />
+        <button type="submit">Sign Up</button>
+        <h5>Already have an account? <a href="#" onclick="showSignIn()">Signin</a></h5>
+      </form>
+    </div>
+
+    <div id="container2">
+      <h2>Sign In</h2>
+      <form action="">
+        <table>
+          <tr>
+            <td><label for="user">Username: </label></td>
+            <td><input type="text" id="user" placeholder="Enter username" /></td>
+          </tr>
+          <tr>
+            <td><label for="pass">Password: </label></td>
+            <td><input type="password" id="pass" placeholder="Enter password" /></td>
+          </tr>
+        </table>
+        <br />
+        <button type="submit">Sign In</button>
+        <h5>Don't have an account? <a href="#" onclick="showSignUp()">Signup</a></h5>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
