@@ -28,7 +28,7 @@ let signup = document
       password: password
     };
     alert('signup successful')
-    console.log("sign up successfull", data);
+    console.log("sign up successfull", data);   // for checking data
     
     showSignIn();
   });
@@ -41,7 +41,7 @@ let signup = document
     if(data[username]){
         if(data[username].password === password){
             alert("Sign In successfull")
-            console.log(data[username]);            
+            console.log(data[username]);            // for checking data
         }
         else{
             alert("incorrect password")
